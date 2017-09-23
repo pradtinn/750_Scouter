@@ -18,10 +18,16 @@
         </activity>
         <activity
             android:name=".AddNewScoutActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity">
+        </activity>
         <activity android:name=".ViewScoutActivity"
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity
+            android:name=".EditScoutActivity"
+            android:parentActivityName=".ViewScoutActivity">
+        </activity>
+
     </application>
 
 </manifest>

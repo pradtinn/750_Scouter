@@ -102,8 +102,9 @@ public class MainActivity extends AppCompatActivity {
                  Intent intent = new Intent(MainActivity.this, ViewScoutActivity.class);
                  Bundle scoutData = new Bundle();
                  scoutData.putStringArray("SCOUT_INFO", scouts.get(position).getScoutData());
+                 scoutData.putInt("SCOUT_INDEX", position);
                  intent.putExtra("DATA_BUNDLE", scoutData);
-                 startActivity(intent);
+                 startActivityForResult(intent, 2);
              }
         });
 
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        getMenuInflater().inflate(R.menu.toolbar_menu_main, menu);
         return true;
     }
 
@@ -148,7 +149,16 @@ public class MainActivity extends AppCompatActivity {
                     scouts.add(new Scout(results.getStringArray("SCOUT_INFO")));
                     scoutArrayAdapter.notifyDataSetChanged();
                 }
-            }
+            } break;
+            case 2: {
+                if (resultCode == RESULT_OK) {
+                    Bundle results = data.getBundleExtra("DATA_BUNDLE");
+                    if (!(scouts.get(results.getInt("SCOUT_INDEX")).equals(new Scout(results.getStringArray("SCOUT_INFO"))))) {
+                        scouts.set(results.getInt("SCOUT_INDEX"), new Scout(results.getStringArray("SCOUT_INFO")));
+                        scoutArrayAdapter.notifyDataSetChanged();
+                    }
+                }
+            } break;
         }
     }
 
