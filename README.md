@@ -7,7 +7,13 @@ other teams' robots, which revolves around their qualitative design features and
 This application makes scouting an easier and more efficient process by providing a simple user interface that makes recording
 information in the fast-paced nature of VEX Robotics competitions much less of a hassle
 
-# Version 1.0.0
+## Current version
+### Version 1.1.0
+**Added feature(s)**:
+- Ability to edit teams from the "View team" window
+
+## Past versions
+### Version 1.0.0
 **Basic functionality**:
 - Ability to add/view information on team name, drivetrain, lift, intake/outtake, and extra notes
 - Ability to clear all current teams
