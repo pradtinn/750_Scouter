@@ -1,10 +1,7 @@
 package com.example.prad.scouter;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.graphics.Typeface;
-import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -23,11 +20,9 @@ import android.widget.TextView;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
