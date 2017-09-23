@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drivetrain_choices">
+        <item>Tank</item>
+        <item>Holonomic X</item>
+        <item>H Drive</item>
+        <item>Cart/Swerve</item>
+        <item>Kiwi</item>
+    </string-array>
+
+    <string-array name="lift_choices">
+        <item>1 Bar</item>
+        <item>2 Bar</item>
+        <item>4 Bar</item>
+        <item>6 Bar</item>
+        <item>Forklift</item>
+        <item>Reverse Double 4 Bar</item>
+        <item>Elevator Lift</item>
+    </string-array>
+
+    <string-array name="intake_outtake_choices">
+        <item>Claw</item>
+        <item>Scoop</item>
+        <item>Plow</item>
+        <item>Launcher</item>
+    </string-array>
+</resources>
