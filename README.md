@@ -9,5 +9,5 @@ information in the fast-paced nature of VEX Robotics competitions much less of a
 
 # Version 1.0.0
 **Basic functionality**:
-- Ability to add/view information on team name, drivetrain, lift, intake/outtake, and extra 
+- Ability to add/view information on team name, drivetrain, lift, intake/outtake, and extra notes
 - Ability to clear all current teams
